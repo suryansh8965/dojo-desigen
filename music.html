@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUsic player project</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="player">
+            <nav id="navbar">
+                <i class="ri-menu-line"></i>
+                <span class="music-text">MUSIC PLAYER</span>
+                <i class="ri-arrow-right-s-line"></i>
+            </nav>
+
+            <div id="center">
+                <video src="music.video.mp4" autoplay loop controls></video>
+            </div>
+            <div id="music-player-line">
+                <div class="current-time">00:00</div>
+                <input type="range" min="0" max="300" value="99" class="music-Duration" onchange="seekto()">
+                <div class="live-remening">00:00</div>
+            </div>
+            <div id="volume-operator">
+                <i class="ri-volume-mute-fill"></i>
+                <input type="range" min="0" max="100" value="99" class="volume" onchange="setvolume()">
+                <i class="ri-volume-up-fill"></i>
+
+
+            </div>
+            <div class="footter">
+                <i class="ri-album-fill"></i>
+                <div class="back-play">
+                    <i class="ri-skip-back-fill"></i>
+                    <i class="ri-play-fill"></i>
+                    <i class="ri-skip-forward-fill"></i>
+                </div>
+                <i class="ri-shuffle-line"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
